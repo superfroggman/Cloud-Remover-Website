@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Remover</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/licens.css">
+    <script src="js/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/icon.svg" id="headerImg" alt="ikon"></a>
+
+        <div id="mobMenu" onclick="expandHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div id="navButtons">
+            <a href="index.html">Hem</a>
+            <a href="download.html">Nedladdningar</a>
+            <a href="preview.html">Förhandsvisning</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="licens.html">Licens</a>
+        </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <a class="title">Licens</a>
+
+    <div id="gplBox" class="gradient">
+        <a>GNU GPL v3</a>
+        <a id="imgContainer" href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+            <img src="img/gplVersion3.png" alt="GPL logga">
+        </a>
+    </div>
+
+    <div id="descBox" class="gradient">
+        Alla versioner av Cloud Remover är Open Source. Detta innebär att vem som helst får läsa igenom källkoden av
+        programmen, samt göra sina egna modifikationer av programmet.<br><br>
+        Cloud Remover ligger under licensen GPL v3, vilket innebär att om någon publicerar en kopia, eller modifierad
+        version av programmet måste de släppa det under samma Open Source licens.
+    </div>
+
+    <a id="contactTitle" class="title">Kontakta Oss</a>
+
+    <div id="formBox" class="gradient">
+        <p>Ställ en fråga eller skicka in ett förslag</p>
+        <form>
+            <input type="text" placeholder="Namn">
+            <input type="email" placeholder="Email"><br>
+            <textarea placeholder="Meddelande" id="message"></textarea>
+
+            <input type="button" value="Skicka in" id="submitButton">
+        </form>
+    </div>
+</body>
+
+</html>

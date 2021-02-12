@@ -1,0 +1,214 @@
+/* Sätt storlek, höjd och bakgrundsbilder på alla parallax block */
+.block-1,
+.block-2,
+.block-3 {
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.block-1 {
+    background-image: url(../img/hem1.jpg);
+    background-position: top;
+    background-size: auto;
+}
+
+.block-2 {
+    background: url(../img/hem2.jpg) fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.block-3 {
+    background-image: url(../img/hem3.jpg);
+}
+
+
+/* Sätt minimum höjd på parallax block */
+@media screen and (max-height: 800px) {
+    .block-1,
+    .block-2,
+    .block-3 {
+        height: 800px;
+    }
+}
+
+
+/* Fix för att bakgrunden inte ska hoppa ner */
+.block-2 .spacer {
+    height: 1px;
+}
+
+/* Storlek på titeln */
+.title {
+    font-size: 110px;
+}
+
+/* Stil på texten under rukbriken, med genomskinlig bakgrund */
+#text1 {
+    margin: auto;
+    margin-top: 20vh;
+    font-size: 40px;
+    width: 750px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+
+/* Dator-specifik stil */
+@media screen and (min-width: 1001px) {
+    #compareBox {
+        width: calc(60vw + 200px);
+        height: calc(30vw + 100px);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+
+    #compareBox p {
+        font-size: calc(5vw + 10px);
+    }
+    #compareFlex {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: calc(2.5vw + 30px);
+    }
+    #compareBox img {
+        margin-top: 60px;
+        width: 30%;
+        border-radius: 30px;
+    }
+    #compareBox #leftText {
+        margin-top: 100px;
+    }
+    #compareBox #rightText {
+        margin-top: calc(18vw + 80px);
+    }
+    #functionBox {
+        float: left;
+        width: calc(35vw + 100px);
+        height: calc(10vw + 150px);
+        margin-top: 15vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        clear: both;
+        margin-left: calc(6vw - 20px);
+    }
+    #functionBox p {
+        font-size: calc(2.5vw + 10px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    #functionBox #functionText {
+        margin: calc(6vw - 20px);
+        margin-top: calc(3vw - 30px);
+    }
+    #functionBox a {
+        font-size: calc(0.8vw + 15px);
+        font-family: Comfortaa-Regular;
+    }
+    #typesBox {
+        float: right;
+        width: calc(30vw + 100px);
+        height: calc(8vw + 150px);
+        margin-top: 15vh;
+        padding-top: 20px;
+        margin-right: calc(6vw - 20px);
+    }
+    #typesBox p {
+        font-size: calc(2.5vw + 10px);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    #typesBox #typesText {
+        margin: calc(5vw - 25px);
+        margin-top: calc(3vw - 30px);
+    }
+    #typesBox a {
+        font-size: calc(0.8vw + 15px);
+        font-family: Comfortaa-Regular;
+    }
+}
+
+
+/* Mobil-specifik stil */
+@media screen and (max-width: 1000px) {
+    .block-1 {
+        background-position: top;
+        background-size: cover;
+    }
+    .block-2 {
+        height: auto;
+    }
+    #text1 {
+        font-size: 60px;
+        width: 90%;
+        line-height: 75px;
+    }
+    #compareBox {
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        clear: both;
+        margin: auto;
+    }
+    #compareBox p {
+        font-size: 60px;
+    }
+    #compareFlex {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 75px;
+    }
+    #compareBox img {
+        margin: auto;
+        width: 90%;
+        border-radius: 30px;
+    }
+    #compareBox #leftText {
+        order: -1;
+    }
+    #compareBox #rightText {
+        margin-top: 50px;
+    }
+    #functionBox,
+    #typesBox {
+        width: 800px;
+        margin: auto;
+    }
+    #functionBox p,
+    #typesBox p {
+        font-size: 75px;
+        padding: 20px;
+    }
+    #functionBox #functionText,
+    #typesBox #typesText {
+        margin: 20px;
+    }
+    #functionBox a,
+    #typesBox a {
+        font-size: 50px;
+        font-family: Comfortaa-Regular;
+    }
+    #functionBox {
+        height: 650px;
+    }
+    #typesBox {
+        height: 500px;
+        margin-top: 100px
+    }
+}
+
+/* Stil för jämnförelse lådan för både mobil och dator */
+#compareBox {
+    margin-top: 50px;
+}

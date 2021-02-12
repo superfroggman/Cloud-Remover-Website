@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Remover</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/hamburger.js"></script>
+    <script src="js/quiz.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/icon.svg" id="headerImg" alt="ikon"></a>
+
+        <div id="mobMenu" onclick="expandHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div id="navButtons">
+            <a href="index.html">Hem</a>
+            <a href="download.html">Nedladdningar</a>
+            <a href="preview.html">Förhandsvisning</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="licens.html">Licens</a>
+        </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <a class="title">Quiz</a>
+
+    <div id="quizBox" class="gradient">
+        <div id="qWindows" class="question">
+            <p class="questionText">Använder du Windows?</p>
+            <div class="button" onclick="choose(this, 'rCS', true)"><a>Ja</a></div>
+            <div class="button" onclick="choose(this, 'qAndroid', false)"><a>Nej</a></div>
+        </div>
+
+        <div id="qAndroid" class="question">
+            <p class="questionText">Använder du Android?</p>
+            <div class="button" onclick="choose(this, 'rAndroid', true)"><a>Ja</a></div>
+            <div class="button" onclick="choose(this, 'qMacLin', false)"><a>Nej</a></div>
+        </div>
+
+        <div id="qMacLin" class="question">
+            <p class="questionText">Använder du Mac eller Linux?</p>
+            <div class="button" onclick="choose(this, 'qInput', false)"><a>Ja</a></div>
+            <div class="button" onclick="choose(this, 'rSorry', true)"><a>Nej</a></div>
+        </div>
+
+        <div id="qInput" class="question">
+            <p class="questionText">Vill du använda endast gif som input?</p>
+            <div class="button" onclick="choose(this, 'rJava', true)"><a>Ja</a></div>
+            <div class="button" onclick="choose(this, 'qSpeed', false)"><a>Nej</a></div>
+        </div>
+
+        <div id="qSpeed" class="question">
+            <p class="questionText">Är det viktigt att programmet ska vara snabbt?</p>
+            <div class="button" onclick="choose(this, 'rCRrust', true)"><a>Ja</a></div>
+            <div class="button" onclick="choose(this, 'rPython', true)"><a>Nej</a></div>
+        </div>
+
+
+        <div id="rStandardStart" class="rec">
+            <p class="recStandardText">Utifrån dina svar rekommenderas du att använda:</p>
+        </div>
+
+        <div id="rCS" class="rec">
+            <a href="download.html#csBox" class="recVersionBox">
+                <div>
+                    <p class="recVersionText">C#</p>
+                    <p class="recDownload">Ta mig dit</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="rAndroid" class="rec">
+            <a href="download.html#anBox" class="recVersionBox">
+                <div>
+                    <p class="recVersionText">Andriod</p>
+                    <p class="recDownload">Ta mig dit</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="rSorry" class="rec">
+            <a class="recVersionBox">
+                <div>
+                    <p class="recDownload">Tyvärr, det finns ingen version av Cloud Remover för de alternativen du
+                        valde. Försök igen.</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="rJava" class="rec">
+            <a href="download.html#javaBox" class="recVersionBox">
+                <div>
+                    <p class="recVersionText">Java</p>
+                    <p class="recDownload">Ta mig dit</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="rCRrust" class="rec">
+            <a href="download.html#rustBox" class="recVersionBox">
+                <div>
+                    <p class="recVersionText">CRrust</p>
+                    <p class="recDownload">Ta mig dit</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="rPython" class="rec">
+            <a href="download.html#pyBox" class="recVersionBox">
+                <div>
+                    <p class="recVersionText">Python</p>
+                    <p class="recDownload">Ta mig dit</p>
+                </div>
+            </a>
+        </div>
+
+        <a href="quiz.html" id="rStandardAgain" class="rec recVersionBox">
+            <div>
+                <p class="recQuizAgain">Ta quizet igen</p>
+            </div>
+        </a>
+        
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+/* Bakgrundsinställningar */
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/previewBGblur.jpg);
+}
+
+/* Fontstorlek på titeln */
+.title{
+    font-size: 60px;
+}
+
+/* Stil för videon och boxen runt den */
+#videoBox{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+    padding: 20px;
+}
+#videoBox video{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Dator-specifik stil */
+@media screen and (min-width: 1001px) {
+    .compareBox{
+        width: calc(60vw + 200px);
+        height: calc(25vw + 50px);
+
+        padding: 20px;
+
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        
+        display: flex;
+        justify-content: space-around;
+
+        font-size: calc(2.5vw + 30px);
+    }
+
+
+    .compareBox img{
+        width: 30%;
+        border-radius: 30px;
+    }
+
+
+    .compareBox .leftText{
+        margin-top: 40px;
+
+    }
+
+    .compareBox .rightText{
+        margin-top: calc(16vw + 40px);
+    }
+}
+
+
+/* Mobil-specifik stil */
+@media screen and (max-width: 1000px) {
+    #videoBox{
+        width: 80%;
+    }
+
+    .compareBox{
+        width: 80%;
+
+        padding-top: 20px;
+        padding-bottom: 40px;
+        
+        margin: auto;
+        margin-top: 50px;
+        
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        font-size: 75px;
+    }
+
+    .compareBox img{
+        margin: auto;
+        width: 90%;
+        border-radius: 30px;
+    }
+
+
+    .compareBox .leftText{
+        order: -1;
+    }
+
+    .compareBox .rightText{
+        margin-top: 50px;
+    }
+}

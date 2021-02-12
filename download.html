@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Remover</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/download.css">
+    <script src="js/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/icon.svg" id="headerImg" alt="ikon"></a>
+
+        <div id="mobMenu" onclick="expandHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div id="navButtons">
+            <a href="index.html">Hem</a>
+            <a href="download.html">Nedladdningar</a>
+            <a href="preview.html">Förhandsvisning</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="licens.html">Licens</a>
+        </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <a class="title">Jämför de olika versionerna</a>
+
+    <table class="gradient">
+
+        <tr>
+            <td><img src="img/icon.svg" alt="ikon" class="logo"></td>
+            <td>C#</td>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Android</td>
+            <td>CRrust</td>
+        </tr>
+
+        <tr>
+            <td>GUI</td>
+            <td class="check"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="check"></td>
+            <td class="cross"></td>
+        </tr>
+        <tr>
+            <td><img src="img/windows.svg" alt="Windows" id="windowsLogo"></td>
+            <td class="check"></td>
+            <td class="check"></td>
+            <td class="check"></td>
+            <td class="cross"></td>
+            <td class="check"></td>
+        </tr>
+
+        <tr>
+            <td><img src="img/apple.png" alt="Apple" class="logo"><img src="img/tux.png" alt="Linux" class="logo"></td>
+            <td class="cross"></td>
+            <td class="check"></td>
+            <td class="check"></td>
+            <td class="cross"></td>
+            <td class="check"></td>
+        </tr>
+
+        <tr>
+            <td><img src="img/android.png" alt="Android" class="logo"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="cross"></td>
+            <td class="check"></td>
+            <td class="cross"></td>
+        </tr>
+
+        <tr>
+            <td><img src="img/speed.png" alt="Hastighet" class="logo"></td>
+            <td>4</td>
+            <td>1</td>
+            <td>5</td>
+            <td>3</td>
+            <td>10</td>
+        </tr>
+
+        <tr id="rowBottom">
+            <td>Format</td>
+            <td>Bilder</td>
+            <td>Alla</td>
+            <td>Gif</td>
+            <td>Gif</td>
+            <td>Alla</td>
+        </tr>
+    </table>
+
+    <div>
+        <div id="csBox" class="gradient versionBox">
+            <img src="img/cs.png" alt="Image of Program">
+            <h1>C#</h1>
+            <p class="versionText"><b>Rekommenderas för nybörjare</b><br>
+                Cloud Remover C# Edition är den första utgåvan av Cloud Remover. Den kommer med ett fint
+                användargränssnitt och är av robust karaktär. För att använda programmet behöver du en mapp med en serie
+                bilder som input.</p>
+
+            <div class="versionButtons">
+                <a href="https://github.com/superfroggman/Cloud-Remover">GitHub</a>
+                <a href="files/CloudRemover.exe">Ladda ner</a>
+            </div>
+        </div>
+
+        <div id="pyBox" class="gradient versionBox">
+            <img src="img/py.png" alt="Image of Program">
+            <h1>Python</h1>
+            <p class="versionText">Cloud Remover Python Edition är den andra utgåvan av Cloud Remover. Python Edition är
+                en terminalapplikation med möjligheten till många olika videoformat som input.</p>
+
+            <div class="versionButtons">
+                <a href="https://github.com/superfroggman/cloud-remover2">GitHub</a>
+                <a href="files/cloud-remover.py">Ladda ner</a>
+            </div>
+        </div>
+
+        <div id="javaBox" class="gradient versionBox">
+            <img src="img/java.png" alt="Image of Program">
+            <h1>Java</h1>
+            <p class="versionText">Cloud Remover Java Edition är en snabb terminalapplikation, skriven i det lättanvända
+                språket Java. Programmet har många valmöjligheter och tar emot input i form av en GIF.</p>
+
+            <div class="versionButtons">
+                <a href="https://github.com/superfroggman/Cloudremover-java">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ladda ner</a>
+            </div>
+        </div>
+
+        <div id="anBox" class="gradient versionBox">
+            <img src="img/CRandroid.png" alt="Image of Program">
+            <h1>Android</h1>
+            <p class="versionText">Cloud Remover Android Edition är en utgåva gjord specifikt för din mobiltelefon. Med
+                denna kan du enkelt spela in en video med mobilen och bli av med moln, smidigare än någonsin.</p>
+
+            <div class="versionButtons">
+                <a href="https://github.com/superfroggman/cloudRemoverAndroid">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ladda ner</a>
+            </div>
+        </div>
+
+        <div id="rustBox" class="gradient versionBox">
+            <img src="img/rust.jpg" alt="Image of Program">
+            <h1>CRrust</h1>
+            <p class="versionText">CRrust är den senaste och absolut snabbaste versionen av Cloud Remover, skrivet i det
+                avancerade språket RUST. CRrust är även flexibelt och kan utnyttja många olika videoformat.</p>
+
+            <div class="versionButtons">
+                <a href="https://github.com/superfroggman/CRrust">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ladda ner</a>
+            </div>
+        </div>
+
+        <div id="bottomSpace"></div>
+    </div>
+</body>
+
+</html>

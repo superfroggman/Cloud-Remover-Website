@@ -1,0 +1,272 @@
+/* Bakgrundsinställningar */
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/downloadBGblur.jpg);
+}
+
+/* Fontstorlek på titeln */
+.title{
+    font-size: 60px;
+}
+
+/* Stil på tabellen */
+table{
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+
+    border-spacing: 0px;
+}
+
+/* Stil på tabelldatan */
+td{
+    width: 190px;
+    height: 70px;
+
+    text-align: center;
+    font-size: 40px;
+    padding: 0;
+    border: 2px solid black;
+}
+
+/* Större border på kant-cellerna */
+tr:first-child td{
+    border-top: 4px solid black;
+}
+
+tr:last-child td{
+    border-bottom: 4px solid black;
+}
+
+td:first-child{
+    border-left: 4px solid black;
+}
+
+td:last-child{
+    border-right: 4px solid black;
+}
+
+/* Rundade hörn på cellerna i hörnen */
+tr:first-child td:first-child{
+    border-top-left-radius: 10px;
+}
+
+tr:first-child td:last-child{
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Stil på loggor och ikoner i tabellen */
+#windowsLogo{
+    width: 45px;
+    background-color: black;
+
+    margin-top: 5px;
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo{
+    width: 45px;
+    margin: 5px;
+
+    margin-bottom: 0;
+}
+
+.check, .cross{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.check{
+    background-image: url(../img/check.png);
+    background-size: contain;
+}
+
+.cross{
+    background-image: url(../img/x.png);
+    background-size: 50px;
+}
+
+/* Blå text i C# versionen */
+#csBox p b{
+    color: #00e9ffff;
+}
+
+/* Stil på nedladdnings/github knapparna */
+.versionBox a{
+    background-color: #600ecdff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Skugga på bilderna */
+.versionBox img{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Ingen skugga på bilden av en telefon då den är avrundad */
+#anBox img{
+    box-shadow: none;
+}
+
+/* Marginal på botten av sidan */
+#bottomSpace{
+    clear: both;
+    height: 100px;
+}
+
+
+/* Dator-specifik stil */
+@media screen and (min-width: 1001px) {
+    .versionBox{
+        height: 500px;
+
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        font-size: 30px;
+
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .versionBox:nth-child(odd) img{
+        order: 0;
+    }
+
+    .versionBox:nth-child(even) img{
+        order: 5;
+    }
+
+
+    .versionBox h1{
+        font-size: 50px;
+        margin: 20px;
+        width: 300px;
+    }
+
+    .versionText{
+        width: 500px;
+    }
+
+    .versionButtons{
+        height: 100px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .versionBox a{
+        width: 45%;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+
+        text-align: center;
+    }
+
+    .versionBox img{
+        width: 45%;
+        height: 90%;        
+    }
+}
+
+
+/* Stor Dator-specifik stil */
+@media screen and (min-width: 1501px) {
+    .versionBox{
+        width: calc(50vw + 250px);
+    }
+
+    .versionBox:nth-child(odd){
+        float: left;
+    }
+
+    .versionBox:nth-child(even){
+        float: right;
+    }
+}
+
+
+/* Vanlig Dator-specifik stil */
+@media screen and (max-width: 1500px) and (min-width: 1001px) {
+    .versionBox{
+        width: 90%;
+    }
+}
+
+/* Mobil-specifik stil */
+@media screen and (max-width: 1000px) {
+    .versionBox{
+        width: 900px;
+
+        margin: auto;
+        margin-top: 100px;
+
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .versionBox h1{
+        order: 0;
+        font-size: 100px;
+        margin-top: 20px;
+    }
+
+    .versionBox p{
+        order: 1;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .versionBox img{
+        order: 2;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .versionBox a{
+        padding: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        font-size: 50px;
+    }
+
+    .versionBox .versionButtons{
+        order: 3;
+        margin: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

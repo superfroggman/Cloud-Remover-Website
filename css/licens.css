@@ -1,0 +1,120 @@
+/* Bakgrundsinställningar */
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/licensBG.jpg);
+}
+
+/* Fontstorlek på titeln */
+.title{
+    font-size: 60px;
+}
+
+#gplBox{
+    width: 450px;
+    margin: auto;
+    margin-top: 50px;
+
+    padding: 20px;
+
+    font-size: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#descBox{
+    width: 50%;
+    margin: auto;
+
+    margin-top: 50px;
+    padding: 20px;
+
+    font-size: 30px;
+    font-family: comfortaa-regular;
+
+    margin-bottom: 50px;
+}
+
+#formBox{
+    width: 50%;
+    margin: auto;
+
+    margin-top: 50px;
+    padding: 20px;
+
+    font-size: 30px;
+
+    margin-bottom: 50px;
+}
+
+#formBox form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#formBox input, #message{
+    color: black;
+    margin: 10px;
+    flex-basis: 100%;
+    text-align: start;
+}
+
+#message{
+    border-radius: 5px;
+    padding: 5px;
+    height: 200px;
+}
+
+#formBox #submitButton{
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* Mobil-specifik stil */
+@media screen and (max-width: 1000px) {
+    #gplBox{
+        width: 85%;
+        font-size: 50px;
+    }
+
+    #gplBox #imgContainer{
+        width: 300px;
+    }
+
+    #gplBox img{
+        width: 300px;
+    }
+
+    #descBox{
+        width: 85%;
+        font-size: 50px;
+    }
+
+    #formBox{
+        width: 85%;
+        font-size: 50px;
+
+        margin-bottom: 200px;
+    }
+
+
+    #formBox input, #message{
+        height: 50px;
+        font-size: 40px;
+    }
+
+    #message{
+        height: 300px;
+    }
+
+    #formBox #submitButton{
+        height: 70px;
+    }
+}
